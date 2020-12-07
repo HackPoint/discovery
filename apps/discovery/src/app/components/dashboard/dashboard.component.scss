@@ -1,0 +1,37 @@
+:host {
+  .dashboard {
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding: 52px 0;
+    }
+    background-color: #FAFAFA;
+
+    .list-container {
+      list-style: none;
+
+      li {
+        border-bottom: 1px solid #A5A5A5;
+
+        h5 {
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    padding: 0 64px;
+  }
+
+  .filter {
+    background-color: #fff;
+    border-left: 1px solid #a5a5a5;
+    padding: 52px 33px;
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+
