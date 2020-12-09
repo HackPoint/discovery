@@ -1,0 +1,15 @@
+<ul class="pager-container">
+  <li class="page-item">
+    <a href="#" (click)="pagination.prev($event)" [class.active]="!pagination.isFirst" [class.disabled]="pagination.isFirst"><</a>
+  </li>
+
+  <li class="page-item"><a href="#"
+                           [totalElements]="15"
+                           [pageSize]="5"
+                           discoveryPaginator
+                           #pagination="discoveryPaginator">{{pagination.page}}</a></li>
+  <li class="page-item">
+    <a href="#" (click)="pagination.next($event)" [class.active]="!pagination.isLast" [class.disabled]="pagination.isLast">></a>
+  </li>
+
+</ul>

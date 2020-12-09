@@ -1,0 +1,19 @@
+:host {
+  /* Pager */
+  .pager-container {
+    display: flex;
+    gap: 25px;
+    padding: 29px 0;
+    .page-item {
+      .active {
+        color: #347CFF;
+      }
+      .disabled {
+        color: #3C474C;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+}
