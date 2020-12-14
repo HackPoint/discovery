@@ -6,5 +6,49 @@
 
   <div class="filter">
     <h4>Фильтры</h4>
+    <form>
+      <input type="text" placeholder="Название" name="name" />
+      <h6>Порт</h6>
+      <span>Выбраны 2</span>
+      <div class="filter-checkbox-container">
+        <div class="filter-item">
+          <input type="checkbox" name="filter" checked />
+          <label>Port Canaveral</label>
+        </div>
+
+        <div class="filter-item">
+          <input type="checkbox" name="filter" checked/>
+          <label>Port of Los Angeles</label>
+        </div>
+
+        <div class="filter-item">
+          <input type="checkbox" name="filter" />
+          <label>Fort Lauderdale</label>
+        </div>
+      </div>
+
+      <h5>Тип</h5>
+      <div class="filter-radio-container">
+        <div class="filter-item">
+          <input type="radio" name="filter" />
+          <label>Barge</label>
+        </div>
+
+        <div class="filter-item">
+          <input type="radio" name="filter" />
+          <label>Cargo</label>
+        </div>
+
+        <div class="filter-item">
+          <input type="radio" name="filter" checked />
+          <label>High Speed Craft</label>
+        </div>
+
+        <div class="filter-item">
+          <input type="radio" name="filter" />
+          <label>Tug</label>
+        </div>
+      </div>
+    </form>
   </div>
 </div>

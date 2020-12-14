@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Directive, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[discoveryPaginator]',
@@ -6,17 +6,16 @@ import { Directive, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class PaginatorDirective implements OnInit {
   @Input() page = 1;
-  @Input() pageSize = 5;
-  @Input() totalElements = 5;
+  @Input() pageSize;
+  @Input() totalElements;
+
   totalPages: number;
 
   constructor() {
   }
 
-
   ngOnInit(): void {
     this.totalPages = Math.ceil(this.totalElements / this.pageSize);
-
   }
 
 
@@ -49,5 +48,4 @@ export class PaginatorDirective implements OnInit {
   private setPage(input: number) {
     this.page = input;
   }
-
 }

@@ -19,6 +19,15 @@
       font-size: 1.2rem;
       font-weight: 500;
     }
+
+    .filter-checkbox-container {
+      border-top: 1px solid #347CFF;
+      border-left: 1px solid #A5A5A5;
+      border-right: 1px solid #A5A5A5;
+      border-bottom: 1px solid #A5A5A5;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
   }
 }
 
