@@ -1,3 +1,10 @@
+
+
+@mixin label-active() {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+
 :host {
   .dashboard {
     h4 {
@@ -10,7 +17,7 @@
     padding: 0 64px;
   }
 
-  .filter {
+  .filters {
     background-color: #fff;
     border-left: 1px solid #a5a5a5;
     padding: 52px 33px 29px;
@@ -27,7 +34,6 @@
       border-bottom: 1px solid #A5A5A5;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
     }
-
   }
 }
 

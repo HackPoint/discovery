@@ -1,0 +1,93 @@
+:host {
+  .form-field {
+    position: relative;
+
+    .bar {
+      position: relative;
+      display: block;
+
+      &:before, &:after {
+        background: #5264AE;
+        bottom: 1px;
+        content: '';
+        height: 1px;
+        position: absolute;
+        width: 0;
+        transition: 0.2s ease all;
+      }
+
+      &:before {
+        left: 50%;
+      }
+
+      &:after {
+        right: 50%;
+      }
+    }
+
+    .highlight {
+      height: 60%;
+      position: absolute;
+      top: 25%;
+      left: 0;
+      pointer-events: none;
+      opacity: 0.5;
+      width: 100px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #757575;
+      font-size: 1.2rem;
+      display: block;
+      width: 300px;
+      padding: 10px 10px 10px 5px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus {
+        ~ label {
+          top: -5px;
+          font-size: .8rem;
+          color: #5264AE;
+        }
+
+        ~ .bar {
+          &:before, &:after {
+            width: 50%;
+          }
+        }
+
+        ~ .highlight {
+          animation: inputHighlighter 0.3s ease;
+        }
+      }
+    }
+
+    label {
+      color: #999;
+      font-size: .8rem;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 1.2rem;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+  }
+
+  /* ANIMATIONS ================ */
+  @keyframes inputHighlighter {
+    from {
+      background: #5264AE;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+}
